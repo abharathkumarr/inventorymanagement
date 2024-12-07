@@ -6,7 +6,7 @@ function conn() {
         connection = mysql.createConnection({
             host: 'localhost',
             user: 'root',
-            password: '18091999',
+            password: '',
             database: 'inventory_management',
         }).promise()
         console.log("db connected successfully")
