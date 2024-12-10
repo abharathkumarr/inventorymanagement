@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Product Listing</h1>
+
+    <!-- Filters -->
+    <div id="filters"></div>
+
+    <div id="categories">
+        <label for="category-select">Select Category:</label>
+        <select id="category-select">
+            <option value="">-- Select Category --</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Furniture">Furniture</option>
+        </select>
+    </div>
+
+    <div id="product-list"></div>
+    
+
+    <!-- Product Details -->
+    <div id="product-details">
+        <h2 id="product-name"></h2>
+        <p id="product-description"></p>
+        <ul id="product-features"></ul>
+    </div>
+
+    <!-- Modal for Big Image -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+
+    <script src="product.js"></script>
+</body>
+</html>
